@@ -23,6 +23,7 @@ const App = () => { // Remove the export statement here
   };
 
   return (
+    <h1>Make a wish !</h1>
     <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
       <input type="text" name="user_name" />
@@ -31,6 +32,10 @@ const App = () => { // Remove the export statement here
       <label>Message</label>
       <textarea name="message" />
       <input type="submit" value="Send" />
+
+    <p>Thanks for showing your intrest.</p>
+
+    <p>Santhi Jewellers</p>
     </form>
   );
 };
