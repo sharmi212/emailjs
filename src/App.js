@@ -32,11 +32,10 @@ const App = () => { // Remove the export statement here
       <label>Message</label>
       <textarea name="message" />
       <input type="submit" value="Send" />
-
-    <p>Thanks for showing your intrest.</p>
+    </form>
+     <p>Thanks for showing your intrest.</p>
 
     <p>Santhi Jewellers</p>
-    </form>
   );
 };
 
