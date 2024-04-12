@@ -1,41 +1,66 @@
-.centered-container {
-  display: center;
-  justify-content: center;
-  align-items: center;
-  height: 80vh; /* Adjust as needed */
+/* App.css */
+
+/* Apply a natural box layout model to all elements */
+* {
+  box-sizing: border-box;
 }
 
-.form-container {
-  width: 300px; /* Decreased width */
+/* Style the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Style the container */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style form inputs */
+label {
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
   border: 1px solid #ccc;
-  padding: 15px; /* Decreased padding */
-  border-radius: 5px;
+  border-radius: 4px;
+  resize: none;
 }
 
-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-form input[type='text'],
-form input[type='email'],
-form textarea {
-  width: calc(100% - 20px); /* Adjusted width to accommodate padding */
-  padding: 6px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-form input[type='submit'] {
-  background-color: #007bff;
-  color: white;
-  border: none;
+input[type="submit"] {
   padding: 10px 20px;
-  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-form input[type='submit']:hover {
+input[type="submit"]:hover {
   background-color: #0056b3;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
 }
