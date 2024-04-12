@@ -15,6 +15,7 @@ const App = () => { // Remove the export statement here
       .then(
         () => {
           console.log('SUCCESS!');
+          alert('Thank you for showing your interest!');
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -23,18 +24,22 @@ const App = () => { // Remove the export statement here
   };
 
   return (
-   
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
-    
+    <div>
+      <h1>Make a wish !</h1>
+      <form ref={form} onSubmit={sendEmail}>
+        <label>Name</label>
+        <input type="text" name="user_name" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message" />
+        <input type="submit" value="Send" />
+      </form>
+      <p>Thanks for showing your interest.</p>
+      <p>Santhi Jewellers</p>
+    </div>
   );
 };
 
 export default App; // Export the component here
+
