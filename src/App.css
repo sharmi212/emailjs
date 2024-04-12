@@ -1,66 +1,39 @@
-/* App.css */
-
-/* Apply a natural box layout model to all elements */
-* {
-  box-sizing: border-box;
-}
-
-/* Style the body */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-}
-
-/* Style the container */
-.container {
-  max-width: 600px;
+form {
+  max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-/* Style the form */
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Style form inputs */
 label {
-  margin-bottom: 8px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
+  width: 60%;
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: none;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px; /* Adjust height as needed */
 }
 
 input[type="submit"] {
-  padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
   background-color: #0056b3;
-}
-
-/* Responsive layout */
-@media (max-width: 768px) {
-  .container {
-    max-width: 90%;
-  }
 }
